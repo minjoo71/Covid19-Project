@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="myHosData"
+            type="com.example.mysecondapplication.data.model.covidHos.Item" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/hop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@{myHosData.yadmNm}"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/hos_sido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/hop_name"
+            app:layout_constraintLeft_toLeftOf="@+id/hop_name"
+            android:text="@{myHosData.sidoNm}"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/hos_sido"
+            app:layout_constraintTop_toTopOf="@+id/hos_sido"
+            android:text="@{myHosData.sgguNm}"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/hos_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/hos_sido"
+            app:layout_constraintLeft_toLeftOf="@+id/hos_sido"
+            android:text="@{myHosData.telno}"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            app:layout_constraintTop_toBottomOf="@+id/hos_tel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="#A6CCEF"
+            android:layout_marginTop="25dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

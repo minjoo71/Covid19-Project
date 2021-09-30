@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--id 이름은 navigation graph 에서 지정 했던 fragment 의 id 와 같아야 함-->
+    <group android:checkableBehavior="single">
+        <item
+            android:title="코로나 상황판"
+            android:id="@+id/covidMainFragment"/>
+
+        <item
+            android:title="선별진료소"
+            android:id="@+id/covidHosFragment" />
+
+    </group>
+</menu>

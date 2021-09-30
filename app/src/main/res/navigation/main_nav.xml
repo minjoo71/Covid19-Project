@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/covidMainFragment">
+
+    <fragment
+        android:id="@+id/covidMainFragment"
+        android:name="com.example.mysecondapplication.ui.main.home.CovidMainFragment"
+        android:label="코로나 상황판"
+        tools:layout="@layout/fragment_covid_main" />
+    <fragment
+        android:id="@+id/covidHosFragment"
+        android:name="com.example.mysecondapplication.ui.main.hospital.CovidHosFragment"
+        android:label="선별진료소"
+        tools:layout="@layout/fragment_covid_hos" >
+    </fragment>
+
+</navigation>

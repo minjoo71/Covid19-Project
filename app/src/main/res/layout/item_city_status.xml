@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="cityData"
+            type="com.example.mysecondapplication.data.model.covidMain.CovidStatus" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="13dp">
+
+            <TextView
+                android:id="@+id/city_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@{cityData.countryName}"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/total_case"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="확진자수"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/city_name"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/new_case"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="새 확진자"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                app:layout_constraintTop_toBottomOf="@+id/total_case"
+                app:layout_constraintStart_toStartOf="@+id/total_case"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/death"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사망자"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                app:layout_constraintTop_toBottomOf="@+id/new_case"
+                app:layout_constraintStart_toStartOf="@+id/new_case"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/recovered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="완치자"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                app:layout_constraintTop_toBottomOf="@+id/death"
+                app:layout_constraintStart_toStartOf="@+id/death"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/total_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@{cityData.totalCase}"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/total_case" />
+
+            <TextView
+                android:id="@+id/new_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@{cityData.newCase}"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#D10C0C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/new_case" />
+
+            <TextView
+                android:id="@+id/death_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@{cityData.death}"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/death" />
+
+            <TextView
+                android:id="@+id/recovered_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@{cityData.recovered}"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/recovered" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>
