@@ -9,5 +9,4 @@
 * 국내/지역별 코로나 감염현황 확인
 * 코로나 선별진료소 전체 목록 확인
 * 현재 지역에서 가까운 선별 진료소 확인
-https://github.com/minjoo9371/Covid19-Project/issues/1#issue-1022282456
-
+<img src="https://github.com/minjoo9371/Covid19-Project/issues/1#issue-1022282456"></img>
