@@ -7,7 +7,6 @@
 **kotlin**, **Jetpack AAC**(***DataBinding, ViewModel, LiveData, Room, Navigation, Paging***), **Dagger2**, **RxJava2**, **Retrofit2**
 
 
-
 ### 주요 기능
 * 국내/지역별 코로나 감염현황 확인
 * 코로나 선별진료소 전체 목록 확인
