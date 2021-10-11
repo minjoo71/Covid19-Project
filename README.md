@@ -16,5 +16,6 @@
 
 ### 서비스 구조
 전체
-![](https://user-images.githubusercontent.com/79129823/136740477-9479cf2b-0a92-4338-a052-2306cd2e55d2.png)
+![image](https://user-images.githubusercontent.com/79129823/136740477-9479cf2b-0a92-4338-a052-2306cd2e55d2.png)
 dagger2
+![image](https://user-images.githubusercontent.com/79129823/136740693-b48a9ad5-e26a-4839-a162-4e5e709bf314.png)
