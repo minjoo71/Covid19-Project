@@ -12,3 +12,7 @@
 * 코로나 선별진료소 전체 목록 확인
 * 현재 지역에서 가까운 선별 진료소 확인
 ![image](https://user-images.githubusercontent.com/79129823/136739518-c85c40c0-36cb-491e-b5f3-e8ae89601ebd.png)
+
+
+### 서비스 구조
+
