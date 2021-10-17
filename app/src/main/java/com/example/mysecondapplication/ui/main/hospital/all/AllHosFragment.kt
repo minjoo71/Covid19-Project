@@ -38,10 +38,11 @@ class AllHosFragment : BaseFragment<FragmentAllHosBinding, AllHosViewModel>() {
         }
     }
 
-    //Function : 데이터 가져오기
+    //Function : 데이터(전체 진료소) 가져오기
     private fun loadData(){
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.allHosDataFlow.collectLatest { data ->
+                //ViewModel에서 전달받은 데이터를 PagingAdapter에 전달
                 hosPagingAdapter.submitData(data)
             }
         }

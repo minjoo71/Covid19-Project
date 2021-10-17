@@ -12,6 +12,7 @@ import javax.inject.Inject
 
 class AllHosViewModel @Inject constructor( private val hosDatabase: AppDatabase) : ViewModel() {
 
+    //dao 객체 획득
     private val hosDao: HosDao = hosDatabase.getHosDao()
 
     //size 매개변수를 PagingConfig 를 통해 설정함

@@ -39,6 +39,7 @@ object AppModule {
     @Provides
     fun provideAppDatabase(context: Context) : AppDatabase {
         return synchronized(this) {
+            //database 인스턴스화
             Room.databaseBuilder(
                 context.applicationContext,
                 AppDatabase::class.java,

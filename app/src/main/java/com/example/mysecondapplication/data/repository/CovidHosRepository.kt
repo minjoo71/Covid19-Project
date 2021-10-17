@@ -37,6 +37,7 @@ class CovidHosRepository  @Inject constructor(
     }
 
     //Function : 선별진료소 데이터를 db에 insert 한다.
+    //일시중단 가능한 함수 -> 비동기 실행을 위한 중단 지점
     suspend fun insertHos(item: Item) {
         hosDao.insertHosData(item)
     }
